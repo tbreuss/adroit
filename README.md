@@ -1,10 +1,10 @@
 # ADROIT
 
-ADROIT is a PHP implementation of the Action-Domain-Responder (ADR) pattern 
-that was proposed by Paul M. Jones as a refinement of Model-View-Controller (MVC)
-that is better suited for web applications.
+ADROIT is a PHP implementation of the Action-Domain-Responder (ADR) pattern.
+
+The ADR pattern was proposed by Paul M. Jones as a refinement of Model-View-Controller (MVC) and is better suited for web applications.
  
-Need more info about ADR? See: <http://pmjones.io/adr/>
+Need more info about ADR? Refer to <http://pmjones.io/adr/>.
 
 
 ## Prerequisites
