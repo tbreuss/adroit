@@ -1,9 +1,9 @@
 <?php
 
-namespace Tebe\AdrExample\Ui\Web\Blog;
+namespace Tebe\AdroitExample\Ui\Web\Blog;
 
-use Tebe\Adr\Responder\RedirectResponder;
-use Tebe\AdrExample\Domain\Blog\BlogService;
+use Tebe\Adroit\Responder\RedirectResponder;
+use Tebe\AdroitExample\Domain\Blog\BlogService;
 
 class BlogDeleteAction
 {

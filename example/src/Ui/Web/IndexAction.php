@@ -1,8 +1,8 @@
 <?php
 
-namespace Tebe\AdrExample\Ui\Web;
+namespace Tebe\AdroitExample\Ui\Web;
 
-use Tebe\Adr\Responder\HtmlResponder;
+use Tebe\Adroit\Responder\HtmlResponder;
 
 class IndexAction
 {

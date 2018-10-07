@@ -1,6 +1,6 @@
 <?php
 
-namespace Tebe\Adr\Responder;
+namespace Tebe\Adroit\Responder;
 
 use Psr\Http\Message\ResponseInterface;
 

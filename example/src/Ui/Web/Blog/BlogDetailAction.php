@@ -1,10 +1,10 @@
 <?php
 
-namespace Tebe\AdrExample\Ui\Web\Blog;
+namespace Tebe\AdroitExample\Ui\Web\Blog;
 
-use Tebe\Adr\Action;
-use Tebe\Adr\Responder\HtmlResponder;
-use Tebe\AdrExample\Domain\Blog\BlogService;
+use Tebe\Adroit\Action;
+use Tebe\Adroit\Responder\HtmlResponder;
+use Tebe\AdroitExample\Domain\Blog\BlogService;
 
 class BlogDetailAction extends Action
 {

@@ -2,9 +2,9 @@
 
 declare(strict_types=1);
 
-namespace Tebe\Adr\ViewHelper;
+namespace Tebe\Adroit\ViewHelper;
 
-use Tebe\Adr\ViewHelper;
+use Tebe\Adroit\ViewHelper;
 
 class EscapeViewHelper implements ViewHelper
 {

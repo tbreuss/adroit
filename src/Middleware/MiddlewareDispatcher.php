@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Tebe\Adr\Middleware;
+namespace Tebe\Adroit\Middleware;
 
 use Psr\Http\Message\ResponseInterface;
 use Psr\Http\Message\ServerRequestInterface;

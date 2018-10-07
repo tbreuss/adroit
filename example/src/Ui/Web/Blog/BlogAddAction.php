@@ -1,9 +1,9 @@
 <?php
 
-namespace Tebe\AdrExample\Ui\Web\Blog;
+namespace Tebe\AdroitExample\Ui\Web\Blog;
 
-use Tebe\Adr\Action;
-use Tebe\Adr\Responder\HtmlResponder;
+use Tebe\Adroit\Action;
+use Tebe\Adroit\Responder\HtmlResponder;
 
 class BlogAddAction extends Action
 {

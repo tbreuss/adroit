@@ -1,6 +1,6 @@
 <?php
 
-namespace Tebe\Adr\Exception;
+namespace Tebe\Adroit\Exception;
 
 use RuntimeException;
 

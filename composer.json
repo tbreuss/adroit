@@ -14,12 +14,12 @@
   },
   "autoload": {
     "psr-4": {
-      "Tebe\\Adr\\": "src"
+      "Tebe\\Adroit\\": "src"
     }
   },
   "autoload-dev": {
     "psr-4": {
-      "Tebe\\AdrExample\\": "example/src"
+      "Tebe\\AdroitExample\\": "example/src"
     }
   },
   "scripts": {

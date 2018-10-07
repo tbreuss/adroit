@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Tebe\Adr;
+namespace Tebe\Adroit;
 
 use DI\Container;
 use FastRoute\Dispatcher;
@@ -11,7 +11,7 @@ use function FastRoute\simpleDispatcher;
 use Psr\Http\Message\ResponseInterface;
 use Psr\Http\Message\ServerRequestInterface;
 use Psr\Http\Server\MiddlewareInterface;
-use Tebe\Adr\Middleware\MiddlewareDispatcher;
+use Tebe\Adroit\Middleware\MiddlewareDispatcher;
 use Zend\Diactoros\Response;
 use Zend\Diactoros\Response\HtmlResponse;
 use Zend\Diactoros\Server;
@@ -78,8 +78,8 @@ class Application
 
         $this->container->set('Psr\Http\Message\ServerRequestInterface', $request);
         $this->container->set('Psr\Http\Message\ResponseInterface', $response);
-        $this->container->set('Tebe\Adr\View', new View($appPath . '/resources/templates'));
-        $this->container->set('Tebe\Adr\Layout', new View($appPath . '/resources/layouts'));
+        $this->container->set('Tebe\Adroit\View', new View($appPath . '/resources/templates'));
+        $this->container->set('Tebe\Adroit\Layout', new View($appPath . '/resources/layouts'));
     }
 
     /**
@@ -131,7 +131,7 @@ class Application
                         if ($type == 'Psr\Http\Message\ServerRequestInterface') {
                             $constructorParams[] = $this->getRequest();
                         }
-                        if ($type == 'Tebe\\Adr\\View') {
+                        if ($type == 'Tebe\\Adroit\\View') {
                             $constructorParams[] = $this->getView();
                         }
                     }
@@ -224,7 +224,7 @@ class Application
      */
     public function setConfig(array $config)
     {
-        $this->container->set('Tebe\Adr\Config', new Config($config));
+        $this->container->set('Tebe\Adroit\Config', new Config($config));
         return $this;
     }
 
@@ -253,7 +253,7 @@ class Application
      */
     public function getConfig()
     {
-        return $this->container->get('Tebe\Adr\Config');
+        return $this->container->get('Tebe\Adroit\Config');
     }
 
     /**
@@ -261,7 +261,7 @@ class Application
      */
     public function getView()
     {
-        return $this->container->get('Tebe\Adr\View');
+        return $this->container->get('Tebe\Adroit\View');
     }
 
     /**
@@ -269,7 +269,7 @@ class Application
      */
     public function getLayout()
     {
-        return $this->container->get('Tebe\Adr\Layout');
+        return $this->container->get('Tebe\Adroit\Layout');
     }
 
     /**

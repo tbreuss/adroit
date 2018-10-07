@@ -2,9 +2,9 @@
 
 declare(strict_types=1);
 
-namespace Tebe\Adr;
+namespace Tebe\Adroit;
 
-//use Tebe\Adr\Helper\Assert;
+//use Tebe\Adroit\Helper\Assert;
 
 class View
 {
@@ -94,7 +94,7 @@ class View
     {
         $helperName = ucfirst($helper);
         if (!isset($this->helpers[$helper])) {
-            $className = 'Tebe\\Adr\\ViewHelper\\' . $helperName . 'ViewHelper';
+            $className = 'Tebe\\Adroit\\ViewHelper\\' . $helperName . 'ViewHelper';
             $fileName  = __DIR__ . "/ViewHelper/{$helperName}ViewHelper.php";
             #Assert::isFile($fileName, "View helper %s does not exist");
             $this->helpers[$helper] = new $className();

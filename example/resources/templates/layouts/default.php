@@ -21,7 +21,7 @@
     <div class="header">
         <div class="container">
             <div class="pure-menu pure-menu-horizontal">
-                <a class="pure-menu-heading pure-menu-link" href="<?= $this->url(['/']) ?>">ADR-Example</a>
+                <a class="pure-menu-heading pure-menu-link" href="<?= $this->url(['/']) ?>">ADROIT-Example</a>
                 <ul class="pure-menu-list">
                     <li class="pure-menu-item">
                         <a class="pure-menu-link" href="<?= $this->url(['/']) ?>">Home</a>

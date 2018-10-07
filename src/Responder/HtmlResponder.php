@@ -1,9 +1,9 @@
 <?php
 
-namespace Tebe\Adr\Responder;
+namespace Tebe\Adroit\Responder;
 
 use Psr\Http\Message\ResponseInterface;
-use Tebe\Adr\View;
+use Tebe\Adroit\View;
 
 class HtmlResponder
 {

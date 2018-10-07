@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Tebe\Adr\Helper;
+namespace Tebe\Adroit\Helper;
 
 // @todo implement class properly
 class UrlHelper

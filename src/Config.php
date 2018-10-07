@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Tebe\Adr;
+namespace Tebe\Adroit;
 
 class Config
 {
