@@ -7,8 +7,8 @@ The ADR pattern was proposed by Paul M. Jones as a refinement of Model-View-Cont
 
 ## Prerequisites
 
-- git
-- composer
+- PHP 7.1
+- Composer
 
 
 ## Installation
