@@ -1,5 +1,7 @@
 <?php
 
+declare(strict_types=1);
+
 namespace Tebe\Adroit\Responder;
 
 use Psr\Http\Message\ResponseInterface;
