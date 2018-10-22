@@ -1,11 +1,11 @@
 <?php
 
-namespace Tebe\AdroitExample\Ui\Web\Blog;
+namespace Example\Ui\Web\Blog;
 
+use Example\Domain\Blog\BlogService;
 use Psr\Http\Message\ServerRequestInterface;
 use Tebe\Adroit\Action;
 use Tebe\Adroit\Responder\RedirectResponder;
-use Tebe\AdroitExample\Domain\Blog\BlogService;
 
 class BlogCreateAction extends Action
 {

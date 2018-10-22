@@ -1,6 +1,6 @@
 <?php
 
-namespace Tebe\AdroitExample\Domain\Blog;
+namespace Example\Domain\Blog;
 
 class BlogModel
 {

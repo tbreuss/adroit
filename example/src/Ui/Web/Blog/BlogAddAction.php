@@ -1,6 +1,6 @@
 <?php
 
-namespace Tebe\AdroitExample\Ui\Web\Blog;
+namespace Example\Ui\Web\Blog;
 
 use Tebe\Adroit\Action;
 use Tebe\Adroit\Responder\HtmlResponder;

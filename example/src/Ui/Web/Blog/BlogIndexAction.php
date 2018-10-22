@@ -1,9 +1,9 @@
 <?php
 
-namespace Tebe\AdroitExample\Ui\Web\Blog;
+namespace Example\Ui\Web\Blog;
 
+use Example\Domain\Blog\BlogService;
 use Tebe\Adroit\Responder\HtmlResponder;
-use Tebe\AdroitExample\Domain\Blog\BlogService;
 
 class BlogIndexAction
 {

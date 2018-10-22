@@ -1,6 +1,8 @@
 <?php
 
-require __DIR__ . '/../../vendor/autoload.php';
+$loader = require __DIR__ . '/../../vendor/autoload.php';
+// adding namespace, usually done in composer.json
+$loader->setPsr4("Example\\", __DIR__ . "/../src");
 
 $config = require "../config/main.php";
 
@@ -15,11 +17,11 @@ Tebe\Adroit\Application::instance()
         Equip\Handler\ActionHandler::class,
     ])*/
     ->setRoutes([
-        ['GET', '/', \Tebe\AdroitExample\Ui\Web\IndexAction::class],
-        ['GET', '/blog', \Tebe\AdroitExample\Ui\Web\Blog\BlogIndexAction::class],
-        ['GET', '/blog/add', \Tebe\AdroitExample\Ui\Web\Blog\BlogAddAction::class],
-        ['GET', '/blog/{id:[a-z0-9-]+}', \Tebe\AdroitExample\Ui\Web\Blog\BlogDetailAction::class],
-        ['POST', '/blog/create', \Tebe\AdroitExample\Ui\Web\Blog\BlogCreateAction::class],
-        ['GET', '/blog/{id:[a-z0-9-]+}/delete', \Tebe\AdroitExample\Ui\Web\Blog\BlogDeleteAction::class]
+        ['GET', '/', \Example\Ui\Web\IndexAction::class],
+        ['GET', '/blog', \Example\Ui\Web\Blog\BlogIndexAction::class],
+        ['GET', '/blog/add', \Example\Ui\Web\Blog\BlogAddAction::class],
+        ['GET', '/blog/{id:[a-z0-9-]+}', \Example\Ui\Web\Blog\BlogDetailAction::class],
+        ['POST', '/blog/create', \Example\Ui\Web\Blog\BlogCreateAction::class],
+        ['GET', '/blog/{id:[a-z0-9-]+}/delete', \Example\Ui\Web\Blog\BlogDeleteAction::class]
     ])
     ->run();
