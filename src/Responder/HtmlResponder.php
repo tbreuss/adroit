@@ -9,8 +9,14 @@ use Tebe\Adroit\View;
 
 class HtmlResponder
 {
+    /** @var ResponseInterface */
     private $response;
 
+    /**
+     * HtmlResponder constructor.
+     * @param ResponseInterface $response
+     * @param View $view
+     */
     public function __construct(ResponseInterface $response, View $view)
     {
         $this->response = $response;
@@ -18,7 +24,9 @@ class HtmlResponder
     }
 
     /**
-     * @inheritDoc
+     * @param string $view
+     * @param array $params
+     * @return ResponseInterface
      */
     public function response(string $view, array $params = [])
     {

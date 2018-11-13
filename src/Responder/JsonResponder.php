@@ -6,13 +6,13 @@ namespace Tebe\Adroit\Responder;
 
 use Psr\Http\Message\ResponseInterface;
 
-class RedirectResponder
+class JsonResponder
 {
     /** @var ResponseInterface */
     private $response;
 
     /**
-     * RedirectResponder constructor.
+     * JsonResponder constructor.
      * @param ResponseInterface $response
      */
     public function __construct(ResponseInterface $response)
@@ -21,18 +21,18 @@ class RedirectResponder
     }
 
     /**
-     * @param string $location
+     * @param array $params
      * @return ResponseInterface
      */
-    public function response(string $location)
+    public function response(array $params = [])
     {
-        /*
-        $location = $payload->getSetting('redirect');
-        if (!empty($location)) {
-            $response = $this->response->withHeader('Location', $location);
-        }
-        */
-        $response = $this->response->withHeader('Location', $location);
+        $json = json_encode($params);
+
+        $response = $this->response->withHeader('Content-Type', 'application/json');
+        $body = $response->getBody();
+        $body->rewind();
+        $body->write($json);
+
         return $response;
     }
 
